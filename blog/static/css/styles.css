@@ -1,0 +1,171 @@
+:root {
+  --borders: #eee;
+  --side-back: #f8f8f8;
+  --link-color: #000;
+  --button-back: #000;
+}
+
+body {
+  display: grid;
+  font-family: 'Merriweather', Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  grid-template-rows: 50px auto;
+  height: 100vh;
+  margin: 0;
+}
+
+h1 {
+  font-size: 3rem;
+  margin: 0;
+  text-align: center;
+  line-height: 1;
+}
+
+h2 {
+  font-size: 2rem;
+  margin: 0;
+}
+
+h3 {
+  font-size: 1.5rem;
+  margin: 0;
+}
+
+a {
+  color: var(--link-color);
+  font-weight: bold;
+  text-decoration: none;
+}
+
+time {
+  opacity: 0.7;
+}
+
+input[type='text'],
+input[type='password'],
+input[type='email'] {
+  border-radius: 0.25rem;
+  border: 1px solid #eee;
+  font-size: 1rem;
+  padding: 0.5rem;
+  width: 100%;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  margin-top: 1rem;
+  padding: 0.5rem 0;
+}
+
+button {
+  background: var(--button-back);
+  border-radius: 0.25rem;
+  border: 0;
+  color: #fff;
+  cursor: pointer;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1rem;
+  font-weight: bold;
+  margin-top: 1rem;
+  padding: 0.5rem 2rem;
+}
+
+header {
+  border-bottom: 1px solid var(--borders);
+  display: flex;
+  grid-column-end: -1;
+  grid-column-start: 1;
+  padding: 1rem;
+  align-items: center;
+}
+
+header nav a {
+  color: #000;
+  font-weight: bold;
+  font-size: 0.9rem;
+  margin-left: 1rem;
+}
+
+header nav {
+  margin-left: auto;
+}
+
+form,
+.page-content {
+  max-width: 70vw;
+  margin: auto;
+}
+
+form p {
+  margin: 0.5rem 0 0;
+}
+
+form p,
+form li {
+  font-size: 0.9rem;
+}
+
+ul {
+  padding: 0;
+  width: 100%;
+  list-style: none;
+}
+
+.brand {
+  text-align: left;
+}
+
+.brand a {
+  font-size: 1.2rem;
+}
+
+.main {
+  padding: 1rem;
+}
+
+.home .main {
+  background-color: #000;
+  color: #fff;
+  display: grid;
+  place-content: center;
+}
+
+.hero {
+  margin: 0;
+  text-align: center;
+  line-height: 1;
+}
+
+.hero h3 {
+  margin: 0;
+  font-weight: normal;
+  opacity: 0.7;
+}
+
+.posts {
+  width: 35em;
+  margin: 2rem auto;
+}
+
+.posts .post {
+  margin: 3rem 0;
+}
+
+.post-content {
+  width: 35em;
+  margin: 2rem auto;
+}
+
+.post-content time {
+  display: block;
+  text-align: center;
+}
+
+.post-content div {
+  margin: 2rem 0;
+}
+
+footer {
+  text-align: center;
+}

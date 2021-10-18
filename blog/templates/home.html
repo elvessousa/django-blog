@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+{% block title %}Home | Blog{% endblock %}
+
+{% block content %}
+<div class="posts">
+  {% for post in posts reversed %}
+  <article class="post">
+    <h3 class="title">
+      <a href="/post/{{ post.id }}">{{ post.title }}</a>
+    </h3>
+    <time>{{ post.created_at }}</time>
+    <p>{{ post.body.html | safe | truncatewords_html:20 }}</p>
+  </article>
+  {% endfor %}
+</div>
+{% endblock %}
