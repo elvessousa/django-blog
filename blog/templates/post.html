@@ -5,7 +5,9 @@
 {% block content %}
   <article class="post-content">
     <h1 class="title">{{ post.title }}</h1>
+    <hr>
     <time>{{ post.created_at }}</time>
+    <hr>
     <div>{{ post.body.html | safe }}</div>
   </article>
 </div>
